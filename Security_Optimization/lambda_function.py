@@ -191,7 +191,7 @@ def get_security_optimization_recommendations():
     # Send email
     html_table += "</body></html>"
     send_email(
-        subject="AWS Trusted Advisor Security Optimization Recommendations",
+        subject="AWS Trusted Advisor Security Recommendations",
         body=html_table,
         to_addresses=os.environ.get['TO_ADDRESS']   #['karthickcse05@gmail.com']
     )
